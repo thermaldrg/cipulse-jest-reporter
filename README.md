@@ -13,7 +13,7 @@ A Jest reporter that sends test results to the CIPulse API for tracking and visu
 ## Installation
 
 ```bash
-npm install --save-dev jest-cipulse-reporter
+npm install --save-dev @ci-ulse/jest-cipulse-reporter
 ```
 
 ## Configuration
@@ -28,7 +28,7 @@ module.exports = {
   reporters: [
     "default", // Keep the default reporter for console output
     [
-      "jest-cipulse-reporter",
+      "@ci-ulse/jest-cipulse-reporter",
       {
         apiKey: "your-api-key",
         // Optional parameters
@@ -53,7 +53,7 @@ module.exports = {
     "reporters": [
       "default",
       [
-        "jest-cipulse-reporter",
+        "@ci-ulse/jest-cipulse-reporter",
         {
           "apiKey": "your-api-key",
           "repositoryId": "your-repository-id"
