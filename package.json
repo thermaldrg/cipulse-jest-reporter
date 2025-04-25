@@ -1,0 +1,41 @@
+{
+  "name": "jest-cipulse-reporter",
+  "version": "1.1.0",
+  "description": "A Jest reporter that sends test results to CIPulse API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "bun run build",
+    "test": "jest",
+    "lint": "eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'"
+  },
+  "keywords": [
+    "jest",
+    "reporter",
+    "ci",
+    "cipulse",
+    "test-reporter"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.24",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "axios": "^1.8.4",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3"
+  }
+}
